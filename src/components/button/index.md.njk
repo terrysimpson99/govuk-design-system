@@ -36,11 +36,38 @@ Align the primary action button to the left edge of your form.
 
 There are 2 ways to use the button component. You can use HTML or, if you are using [Nunjucks](https://mozilla.github.io/nunjucks/) or the [GOV.UK Prototype Kit](https://govuk-prototype-kit.herokuapp.com), you can use the Nunjucks macro.
 
+
 ### Start buttons
 
 Use a start button as the main call to action on your service’s start page.
 
 {{ example({group: "components", item: "button", example: "start", html: true, nunjucks: true, open: false}) }}
+
+
+### Primary buttons
+
+Use a primary button to represent the main call to action on a page in your service.
+
+{{ example({group: "components", item: "button", example: "default", html: true, nunjucks: true, open: false}) }}
+
+Avoid using multiple primary buttons on a single page.
+
+
+### Secondary buttons
+
+Use secondary buttons to represent secondary calls to action on a page.
+
+{{ example({group: "components", item: "button", example: "secondary", html: true, nunjucks: true, open: false}) }}
+
+
+### Destructive buttons
+
+Use destructive buttons for actions that have serious consequences that cannot easily be undone by the user.
+
+{{ example({group: "components", item: "button", example: "destructive", html: true, nunjucks: true, open: false}) }}
+
+Destructive buttons should be used very sparingly, or not at all.
+
 
 ### Disabled buttons
 

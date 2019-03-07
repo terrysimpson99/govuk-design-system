@@ -1,0 +1,10 @@
+---
+title: Secondary button
+layout: layout-example.njk
+---
+{% from "button/macro.njk" import govukButton %}
+
+{{ govukButton({
+  text: "Delete account",
+  classes: "govuk-button--destructive"
+}) }}
