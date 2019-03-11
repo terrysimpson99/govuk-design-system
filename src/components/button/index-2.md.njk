@@ -80,11 +80,15 @@ Only use disabled buttons if research shows it makes the user interface easier t
 
 ### Link buttons
 
-Use link buttons for actions or groups of actions that need low visual prominence on the page.
+Use link buttons for actions that need low visual prominence on the page, or in cases where the user expects a link but the service requires that a button is used.
 
 {{ example({group: "components", item: "button", example: "link", html: true, nunjucks: true, open: false}) }}
 
-Link buttons can also be used in cases where the user expects a link, but where the service requires that a HTML form is submitted.
+#### Usability issues with link buttons
+
+Styling buttons as links may confuse some users. Most browsers allow users to copy links, or open them in a new tab or window - which you can't do with a button. Don't style a button as a link if its context means that users might reasonably want to do this.
+
+Assistive technology will treat this element like a button, even though it looks like a link. This may confuse users of screen reader or voice recognition software. This is why the element reverts to a more button-like style when it has focus or is hovered over.
 
 
 ### Stop users from accidentally sending information more than once
