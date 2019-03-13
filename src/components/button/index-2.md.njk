@@ -37,21 +37,22 @@ Align the primary action button to the left edge of your form.
 There are 2 ways to use the button component. You can use HTML or, if you are using [Nunjucks](https://mozilla.github.io/nunjucks/) or the [GOV.UK Prototype Kit](https://govuk-prototype-kit.herokuapp.com), you can use the Nunjucks macro.
 
 
-### Default buttons
+### Start buttons
 
-Use a default button to represent the main call to action on a page in your service.
+Use a start button as the main call to action on your service’s start page.
 
-Avoid using multiple default buttons on a single page.
+{{ example({group: "components", item: "button", example: "start", html: true, nunjucks: true, open: false}) }}
+
+
+### Primary buttons
+
+Use a primary button to represent the main call to action on a page in your service.
+
+Avoid using multiple primary buttons on a single page.
 
 
 {{ example({group: "components", item: "button", example: "default", html: true, nunjucks: true, open: false}) }}
 
-
-### Start buttons
-
-Use a start button as the main call to action on your service’s [start page](/patterns/start-pages/).
-
-{{ example({group: "components", item: "button", example: "start", html: true, nunjucks: true, open: false}) }}
 
 
 ### Secondary buttons
@@ -60,19 +61,28 @@ Use secondary buttons to represent secondary calls to action on a page.
 
 {{ example({group: "components", item: "button", example: "secondary", html: true, nunjucks: true, open: false}) }}
 
-Secondary buttons can be used in combination with default buttons.
+Secondary buttons can be used in combination with primary buttons.
 
 {{ example({group: "components", item: "button", example: "secondary-combo", html: true, nunjucks: true, open: false}) }}
 
 
 ### Destructive buttons
 
-Only use destructive buttons for actions that have serious consequences that cannot easily be undone by the user.
+Use destructive buttons for actions that have serious consequences and that cannot easily be undone by the user.
 
-Destructive buttons are designed to grab the users attention and make them think carefully before they use them. This only works if they are used very sparingly.
-
+Destructive buttons should be used very sparingly, or not at all.
 
 {{ example({group: "components", item: "button", example: "destructive", html: true, nunjucks: true, open: false}) }}
+
+
+
+### Quiet buttons
+
+There are quiet versions of the primary and secondary button styles.
+
+Only use these on more complex layouts, where you need to maintain visual hierarchy.
+
+{{ example({group: "components", item: "button", example: "quiet-primary", html: true, nunjucks: true, open: false}) }}
 
 
 
@@ -84,6 +94,27 @@ Only use disabled buttons if research shows it makes the user interface easier t
 
 {{ example({group: "components", item: "button", example: "disabled", html: true, nunjucks: true, open: false}) }}
 
+
+### Link buttons
+
+Use link buttons for actions that need low visual prominence on the page, or in cases where the user expects a link but the service requires that a button is used.
+
+{{ example({group: "components", item: "button", example: "link", html: true, nunjucks: true, open: false}) }}
+
+
+#### Usability issues with link buttons
+
+Styling buttons as links may confuse some users. Most browsers allow users to copy links, or open them in a new tab or window - which you can't do with a button. Don't style a button as a link if its context means that users might reasonably want to do this.
+
+Assistive technology will treat this element like a button, even though it looks like a link. This may confuse users of screen reader or voice recognition software. This is why the element reverts to a more button-like style when it has focus or is hovered over.
+
+
+
+### Stacking buttons
+
+Buttons can be stacked in columns in more complex layouts.
+
+{{ example({group: "components", item: "button", example: "stacking-example", html: true, nunjucks: true, open: false}) }}
 
 
 ### Stop users from accidentally sending information more than once
