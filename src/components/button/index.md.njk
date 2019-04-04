@@ -64,16 +64,23 @@ You can use secondary buttons in combination with default buttons.
 
 {{ example({group: "components", item: "button", example: "secondary-combo", html: true, nunjucks: true, open: false}) }}
 
+Each secondary button you add to a screen results in another choice your user has to make. Before using secondary buttons, try to simplify your interface or break it across multiple screens.
+
+
 
 ### Warning buttons
 
-Only use warning buttons for actions that have serious consequences that cannot easily be undone by the user, for example deleting accounts or cancelling applications.
+Only use warning buttons for destructive actions that have serious consequences and that cannot easily be undone by the user, for example permanently deleting an account. Most services should not need this button style.
 
 Warning buttons are designed to grab the user's attention and make them think carefully before they use them. They only work if they are used very sparingly.
 
 {{ example({group: "components", item: "button", example: "warning", html: true, nunjucks: true, open: false}) }}
 
 Consider asking users to confirm actions that have serious consequences. If you do this, use the warning button style for the confirmation, not the inital action button.
+
+Alternatively, allow users to easily undo an action immediately after they have performed it. If you do this you do not need to use the warning button style.
+
+Don't rely on the colour of warning buttons alone to convey the serious nature of the action, as some colourblind users will not perceive this difference. Make sure that the button text and context also convey this.
 
 
 
