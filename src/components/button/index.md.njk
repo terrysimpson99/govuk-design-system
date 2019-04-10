@@ -39,26 +39,24 @@ There are 2 ways to use the button component. You can use HTML or, if you are us
 
 ### Default buttons
 
-Use a default button to represent the main call to action on a page in your service.
+Use a default button as the main call to action on a page in your service.
 
 Avoid using multiple default buttons on a single page.
-
 
 {{ example({group: "components", item: "button", example: "default", html: true, nunjucks: true, open: false}) }}
 
 
 ### Start buttons
 
-Use a start button as the main call to action on your service’s [start page](/patterns/start-pages/).
+A start button is the main call to action on your service’s [start page](/patterns/start-pages/).
 
 {{ example({group: "components", item: "button", example: "start", html: true, nunjucks: true, open: false}) }}
 
-
 ### Secondary buttons
 
-Use secondary buttons to represent secondary calls to action on a page. 
+Use secondary buttons for secondary calls to action on a page. 
 
-If your interface has many secondary actions it may be hard for users to know what to do next - try to simplify it or break it across multiple screens.
+Pages with too many calls to action make it hard for users to know what to do next. Before adding lots of secondary buttons, try to simplify it or break it across multiple screens.
 
 
 {{ example({group: "components", item: "button", example: "secondary", html: true, nunjucks: true, open: false}) }}
@@ -67,19 +65,19 @@ You can use secondary buttons in combination with default buttons.
 
 {{ example({group: "components", item: "button", example: "secondary-combo", html: true, nunjucks: true, open: false}) }}
 
+### Warning buttons 
 
-### Warning buttons
-
-Use warning buttons for actions that have serious destructive consequences and that cannot easily be undone by the user. For example, permanently deleting an account. 
-
-Warning buttons are designed to make users think carefully before they use them. They only work if they are used very sparingly. Most services should not need one.
-
-Consider asking users to confirm actions that have serious consequences. The warning style should only be applied to the confirmation button, not the inital action.
-
-Make sure that the context and wording of the button sufficiently conveys what will happen if the user presses it. Do not rely on the red colour alone.
+Warning buttons are designed to make users think carefully before they use them. They only work if used very sparingly. Most services should not need one.
 
 {{ example({group: "components", item: "button", example: "warning", html: true, nunjucks: true, open: false}) }}
 
+Only use warning buttons for actions with serious destructive consequences that cannot be easily undone by a user. For example, permanently deleting an account.
+
+When letting users carry out an action like this, it's a good idea to include an additional step which asks them to confirm it.
+
+In this instance, use a warning button for the final confirmation rather than the initial call to action. 
+
+Do not only rely on the red colour of a warning button to communicate the serious nature of the action. Make sure the context and button text make clear what will happen if the user selects it.
 
 ### Disabled buttons
 
@@ -88,8 +86,6 @@ Disabled buttons have poor contrast and can confuse some users, so avoid them if
 Only use disabled buttons if research shows it makes the user interface easier to&nbsp;understand.
 
 {{ example({group: "components", item: "button", example: "disabled", html: true, nunjucks: true, open: false}) }}
-
-
 
 ### Stop users from accidentally sending information more than once
 
