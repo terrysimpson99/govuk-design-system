@@ -39,16 +39,16 @@ There are 2 ways to use the button component. You can use HTML or, if you are us
 
 ### Default buttons
 
-Use a default button as the main call to action on a page in your service.
+Use a default button for the main call to action on a page.
 
-Avoid using multiple default buttons on a single page.
+Avoid using multiple default buttons on a single page. Having more than one main call to action reduces their impact, and makes it harder for users to know what to do next.
 
 {{ example({group: "components", item: "button", example: "default", html: true, nunjucks: true, open: false}) }}
 
 
 ### Start buttons
 
-A start button is the main call to action on your service’s [start page](/patterns/start-pages/).
+Use a start button for the main call to action on your service’s [start page](/patterns/start-pages/).
 
 {{ example({group: "components", item: "button", example: "start", html: true, nunjucks: true, open: false}) }}
 
@@ -56,8 +56,7 @@ A start button is the main call to action on your service’s [start page](/patt
 
 Use secondary buttons for secondary calls to action on a page. 
 
-Pages with too many calls to action make it hard for users to know what to do next. Before adding lots of secondary buttons, try to simplify it or break it across multiple screens.
-
+Pages with too many calls to action make it hard for users to know what to do next. Before adding lots of secondary buttons, try to simplify the page or break the content down across multiple pages.
 
 {{ example({group: "components", item: "button", example: "secondary", html: true, nunjucks: true, open: false}) }}
 
@@ -75,9 +74,9 @@ Only use warning buttons for actions with serious destructive consequences that 
 
 When letting users carry out an action like this, it's a good idea to include an additional step which asks them to confirm it.
 
-In this instance, use a warning button for the final confirmation rather than the initial call to action. 
+In this instance, use another style of button for the initial call to action, and a warning button for the final confirmation. 
 
-Do not only rely on the red colour of a warning button to communicate the serious nature of the action. Make sure the context and button text make clear what will happen if the user selects it.
+Do not only rely on the red colour of a warning button to communicate the serious nature of the action. This is because not all users will be able to see the colour or will understand what it signifies. Make sure the context and button text make clear what will happen if the user selects it.
 
 ### Disabled buttons
 
